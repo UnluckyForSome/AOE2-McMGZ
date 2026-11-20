@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 on:
   push:
@@ -7,14 +5,21 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
+
+permissions:
+  contents: read
+
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
       - name: Install pytest
         run: pip install pytest
       - name: Install mgz
         run: pip install -e .
       - name: Run tests
-        run: py.test -v tests
+        run: python -m pytest -v tests
