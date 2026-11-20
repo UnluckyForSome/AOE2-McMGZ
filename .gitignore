@@ -1,7 +1,8 @@
 dist/
 build/
-mgz.egg-info/
+*.egg-info/
 venv/
 .tox/
 *.pyc
 *.sqlite
+SYNC.md

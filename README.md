@@ -1,6 +1,26 @@
-# mgz
+# AOE2-McMGZ
 
-Age of Empires II recorded game parsing and summarization in Python 3.
+AOE2Museum-maintained fork of `mgz` for Age of Empires II recorded game parsing and
+summarization in Python 3.
+
+## Install
+
+From TestPyPI:
+
+```bash
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ AOE2-McMGZ
+```
+
+Import path remains:
+
+```python
+import mgz
+from mgz.summary import Summary
+```
+
+This fork currently publishes under the distribution name
+`AOE2-McMGZ` while keeping the upstream Python package namespace
+`mgz`.
 
 ## Supported Versions
 
@@ -105,7 +125,7 @@ with open('/path/to/file', 'rb') as h:
 
 **Q:** How can I install this package?
 
-**A:** `pip install mgz`
+**A:** `pip install AOE2-McMGZ`
 
 ## Contribution
  - Pull requests & patches welcome

@@ -2,10 +2,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mgz',
-    version='1.8.51',
-    description='Parse Age of Empires 2 recorded games.',
-    url='https://github.com/happyleavesaoc/aoc-mgz/',
+    name='AOE2-McMGZ',
+    version='0.1.0',
+    description='Museum-maintained fork of mgz for parsing Age of Empires II recorded games.',
+    url='https://github.com/UnluckyForSome/AOE2-McMGZ',
     license='MIT',
     author='happyleaves',
     author_email='happyleaves.tfr@gmail.com',
