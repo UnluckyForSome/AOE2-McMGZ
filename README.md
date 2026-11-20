@@ -5,10 +5,10 @@ summarization in Python 3.
 
 ## Install
 
-From TestPyPI:
+From GitHub (pin a tag or commit SHA with `@<ref>` for reproducible installs):
 
 ```bash
-pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ AOE2-McMGZ
+pip install git+https://github.com/UnluckyForSome/AOE2-McMGZ
 ```
 
 Import path remains:
@@ -18,9 +18,8 @@ import mgz
 from mgz.summary import Summary
 ```
 
-This fork currently publishes under the distribution name
-`AOE2-McMGZ` while keeping the upstream Python package namespace
-`mgz`.
+This fork uses the distribution name `AOE2-McMGZ` while keeping the
+upstream Python package namespace `mgz`. It is not published to PyPI.
 
 ## Supported Versions
 
